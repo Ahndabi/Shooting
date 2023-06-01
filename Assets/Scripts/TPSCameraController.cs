@@ -6,9 +6,9 @@ using UnityEngine.InputSystem;
 public class TPSCameraController : MonoBehaviour
 {
 	[SerializeField] Transform cameraRoot;
+	[SerializeField] Transform aimTarget;
 	[SerializeField] float mouseSensitivity;
 	[SerializeField] float lookDistance;
-	[SerializeField] Transform aimTarget;		// 따라다닐 애
 
 	Vector2 lookDelta;
 	float xRotation;
@@ -39,7 +39,7 @@ public class TPSCameraController : MonoBehaviour
 	{
 		// 플레이어가 카메라를 따라 바라보게함. 카메라를 따라 플레이어가 카메라의 방향을 바라보게함
 		Vector3 lookPoint = Camera.main.transform.position + Camera.main.transform.forward * lookDistance;
-		aimTarget.position = lookPoint;		// 바라보기 위한 위치를 쏘고자 하는 위치로 설정
+		aimTarget.position = lookPoint;
 
 		// lookDistance만큼 떨어진 곳을 바라보게끔
 		lookPoint.y = transform.position.y;     // 발 밑

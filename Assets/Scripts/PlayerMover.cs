@@ -63,11 +63,11 @@ public class PlayerMover : MonoBehaviour
 		// Lerp : 처음값(현재값)과 끝값(목표값) 중간에 몇퍼센트의 값을 얻어줄 수 있음. 순차적으로 변하는 것 구현
 		// 근데 밑에서 댐핑을 하니까 Lerp 안 쓴대,, Mathf.Lerp
 
-		anim.SetFloat("XSpeed", moveDir.x, 0.1f, Time.deltaTime);
+		anim.SetFloat("XSpeed", moveDir.x, 0.1f, Time.deltaTime);	// XSpeed를 0.1초 안에 바꾸도록 함. 댐핑을 넣어서 자연스럽게 바뀌도록 (애니메이션이 확! 바뀌지 않도록)
 		anim.SetFloat("YSpeed", moveDir.z, 0.1f, Time.deltaTime);
 		anim.SetFloat("Speed", moveSpeed);
 		// 누를 때마다 애니메이션이 계속 확인되어야 하니까 OnMove에 넣지 않고 Move()에 넣음,,???
-		// 0.1 댐핑을 넣어주고 델타타임 추가. 바로 바뀌지 않고 슬며시 바뀜(댐핑)
+		// 0.1 댐핑을 넣어주고 델타타임 추가. 바로 바뀌지 않고 슬며시 바뀜(댐핑) 
 
 		// transform엔 left가 없음. left 쓰고 싶으면 right에 -1 곱하면 됨
 	}
@@ -116,6 +116,5 @@ public class PlayerMover : MonoBehaviour
 	void OnWalk(InputValue value)
 	{
 		isWalking = value.isPressed;	// 눌렀을 땐 isWalking이 true가 되고, 뗐을 땐 false가 될 거임
-
 	}
 }
