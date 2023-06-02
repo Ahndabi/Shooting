@@ -6,6 +6,9 @@ using UnityEngine.InputSystem;
 
 public class PlayerShooter : MonoBehaviour
 {
+	
+	public TrailRenderer bulletTrail;
+
 	[SerializeField] Rig aimRig;		// 유니티엔진.에니메이션.리깅에 있음
 	[SerializeField] float reloadTime;
 	[SerializeField] WeaponHolder weaponHolder;		// 인스펙터에서 드래그 해줄거임
@@ -14,6 +17,8 @@ public class PlayerShooter : MonoBehaviour
 
 	private void Awake()
 	{
+		bulletTrail =  Resources.Load<TrailRenderer>("Prefabs/BulletTrail");
+		// 플레이 안 하고 있을 땐 할당이 안 되어 있지만, 플레이 시작하면 바로 할당되는 것을 볼 수 있음!
 		anim = GetComponent<Animator>();
 	}
 

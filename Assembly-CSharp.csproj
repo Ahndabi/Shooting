@@ -56,30 +56,38 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\HomeWork\2023.06.01\Shooting.cs" />
     <Compile Include="Assets\HomeWork\2023.05.30\CameraMove.cs" />
     <Compile Include="Assets\Scripts\FPSCameraController.cs" />
+    <Compile Include="Assets\HomeWork\2023.06.01\Poolable_Test.cs" />
     <Compile Include="Assets\Imports\UnityTechnologies\ParticlePack\Shared\Scripts\ProximityActivate.cs" />
+    <Compile Include="Assets\HomeWork\2023.06.01\ObjectPooling_Test.cs" />
+    <Compile Include="Assets\Scripts\Target.cs" />
+    <Compile Include="Assets\Scripts\DesignPattern\ObjectPool.cs" />
     <Compile Include="Assets\Imports\UnityTechnologies\ParticlePack\Shared\Ramps\Runtime\RampAsset.cs" />
+    <Compile Include="Assets\ObjectPool\ObjectPoolTester.cs" />
+    <Compile Include="Assets\Scripts\Interface\IHitable.cs" />
     <Compile Include="Assets\Imports\UnityTechnologies\ParticlePack\Shared\Scripts\SimpleCameraController.cs" />
+    <Compile Include="Assets\ObjectPool\ObjectPool.cs" />
     <Compile Include="Assets\Imports\UnityTechnologies\ParticlePack\Shared\Scripts\SimpleCharacterMotor.cs" />
     <Compile Include="Assets\Scripts\PlayerMover.cs" />
+    <Compile Include="Assets\Scripts\WeaponHolder.cs" />
     <Compile Include="Assets\Scripts\TPSCameraController.cs" />
     <Compile Include="Assets\Imports\UnityTechnologies\ParticlePack\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Imports\UnityTechnologies\ParticlePack\Shared\Scripts\AdjustTimeScale.cs" />
+    <Compile Include="Assets\Scripts\Gun.cs" />
+    <Compile Include="Assets\ObjectPool\Poolable.cs" />
     <Compile Include="Assets\HomeWork\2023.05.30\Player.cs" />
     <Compile Include="Assets\Imports\UnityTechnologies\ParticlePack\EffectExamples\Misc Effects\Scripts\SpawnEffect.cs" />
     <Compile Include="Assets\Scripts\PlayerShooter.cs" />
-    <Compile Include="Assets\Scripts\WeaponHolder.cs" />
-    <Compile Include="Assets\Scripts\Gun.cs" />
-    <Compile Include="Assets\Scripts\Interface\IHitable.cs" />
-    <Compile Include="Assets\Scripts\Target.cs" />
-    <Compile Include="Assets\Scripts\DesignPattern\ObjectPool.cs" />
-    <Compile Include="Assets\ObjectPool\Poolable.cs" />
-    <Compile Include="Assets\ObjectPool\ObjectPool.cs" />
-    <Compile Include="Assets\ObjectPool\ObjectPoolTester.cs" />
-    <Compile Include="Assets\HomeWork\2023.06.01\ObjectPooling_Test.cs" />
-    <Compile Include="Assets\HomeWork\2023.06.01\Poolable_Test.cs" />
-    <Compile Include="Assets\HomeWork\2023.06.01\Shooting.cs" />
+    <Compile Include="Assets\Configs\GameSetting.cs" />
+    <Compile Include="Assets\GameManger\GameManager.cs" />
+    <Compile Include="Assets\ObjectPool\PoolManager.cs" />
+    <Compile Include="Assets\Scripts\Utils\Extension.cs" />
+    <Compile Include="Assets\GameManger\ResourceManager.cs" />
+    <Compile Include="Assets\Scripts\DesignPattern\FlyWeight.cs" />
+    <Compile Include="Assets\HomeWork\2023.06.02\PoolManager_Test.cs" />
+    <Compile Include="Assets\HomeWork\2023.06.02\ResourceManager_Test.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Imports\UnityTechnologies\ParticlePack\TextMesh Pro\Shaders\TMPro.cginc" />
